@@ -6,6 +6,25 @@
   padding: 0;
 }
 
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: violet;
+  color: #333;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 0.5em;
+}
+
+.btn:hover {
+  background-color: green;
+  color: #eee;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
 .site-nav {
   background-color: black;
 }
@@ -13,10 +32,11 @@
 .site-nav ul {
   list-style-type: none;
   display: flex;
+  justify-content: start;
   padding: 1em;
 }
 
-.site-nav a {
+.site-nav__link {
   display: inline-block;
   text-decoration: none;
   color: #eee;
@@ -24,7 +44,7 @@
   transition: all 0.3s;
 }
 
-.site-nav a:hover {
+.site-nav__link:hover {
   background-color: #333;
   border-radius: 0.5em;
 }
